@@ -1,0 +1,6 @@
+.gemini/
+__pycache__/
+*.zip
+tmp/
+.vscode/
+.DS_Store
