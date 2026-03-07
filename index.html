@@ -545,6 +545,15 @@
     transition: background 0.4s;
     cursor: default;
   }
+  .service-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--accent-glow), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .service-card:hover::after { opacity: 1; }
   .service-card::before {
     content: '';
     position: absolute;
@@ -562,8 +571,8 @@
     font-family: var(--font-tech);
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--accent);
-    opacity: 0.1;
+    color: var(--accent-brand);
+    opacity: 0.2;
     line-height: 1;
     margin-bottom: 1.5rem;
     transition: opacity 0.3s;
@@ -581,6 +590,7 @@
     font-size: 1.1rem;
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
+    color: var(--accent-brand);
   }
   .service-desc {
     font-size: 0.78rem;
@@ -640,14 +650,22 @@
     align-items: center;
     gap: 2rem;
     padding: 1.8rem 2rem;
-    transition: background 0.3s, transform 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
     border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .project-row::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--accent-glow), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
   }
   .project-row:hover { background: var(--card); transform: translateX(5px); }
-  a.project-row:hover .project-name { color: var(--accent); }
+  .project-row:hover::after { opacity: 1; }
+  a.project-row:hover .project-name { color: var(--accent-brand); }
   .project-index {
     font-size: 0.65rem;
     color: var(--muted);
