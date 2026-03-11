@@ -155,12 +155,16 @@
     }
 
     .nav-logo {
-      font-family: var(--font-main);
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: 0.05em;
-      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      height: 32px;
       text-decoration: none;
+    }
+
+    .nav-logo img {
+      height: 100%;
+      width: auto;
     }
 
     a {
@@ -1246,7 +1250,9 @@
 
     <!-- NAV -->
     <nav>
-      <a href="#" class="nav-logo">⬡ The Orchestrators</a>
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.svg" alt="The Orchestrators Logo">
+      </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -1451,34 +1457,34 @@
           <div class="projects-list">
             <div class="project-row">
               <span class="project-index">01</span>
+              <span class="project-name">Campus Coin</span>
+              <span class="project-cat">System</span>
+              <span class="project-status"><span class="status-dot"></span>Development</span>
+            </div>
+            <div class="project-row">
+              <span class="project-index">02</span>
               <span class="project-name">Aas Pass</span>
               <span class="project-cat">Web Development</span>
               <span class="project-status"><span class="status-dot"></span>Active</span>
             </div>
             <a href="https://setu-demo-website.vercel.app/" target="_blank" class="project-row">
-              <span class="project-index">02</span>
+              <span class="project-index">03</span>
               <span class="project-name">Setu</span>
               <span class="project-cat">Web Development</span>
               <span class="project-status"><span class="status-dot"></span>Live Demo</span>
             </a>
             <a href="https://kachori-demowebsite.vercel.app/" target="_blank" class="project-row">
-              <span class="project-index">03</span>
+              <span class="project-index">04</span>
               <span class="project-name">Jalaram Website</span>
               <span class="project-cat">Web Development</span>
               <span class="project-status"><span class="status-dot"></span>Live Demo</span>
             </a>
             <a href="https://demo-gym-website-rho.vercel.app/" target="_blank" class="project-row">
-              <span class="project-index">04</span>
+              <span class="project-index">05</span>
               <span class="project-name">Apex Gym Website</span>
               <span class="project-cat">Web Development</span>
               <span class="project-status"><span class="status-dot"></span>Live Demo</span>
             </a>
-            <div class="project-row">
-              <span class="project-index">05</span>
-              <span class="project-name">Campus Coin</span>
-              <span class="project-cat">System</span>
-              <span class="project-status"><span class="status-dot"></span>Development</span>
-            </div>
             <div class="project-row">
               <span class="project-index">06</span>
               <span class="project-name">Krea Service Hub</span>
@@ -1648,9 +1654,11 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-logo">⬡ The Orchestrators</div>
-      <div class="footer-tagline" style="color: var(--accent-brand);">"Orchestrating systems into ideas."</div>
-      <div class="footer-copy">© 2024 The Orchestrators. All rights reserved.</div>
+      <div class="footer-logo">
+        <img src="assets/logo.svg" alt="The Orchestrators Logo" style="height: 48px; margin-bottom: 1rem;">
+      </div>
+      <div class="footer-tagline" style="color: var(--accent-brand); font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.8;">"We orchestrate your online debut."</div>
+      <div class="footer-copy" style="margin-top: 2rem;">© 2024 The Orchestrators. All rights reserved.</div>
     </footer>
 
   </div> <!-- End #main-site-content -->

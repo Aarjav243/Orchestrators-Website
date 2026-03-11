@@ -1,0 +1,22 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brand Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Main Circle -->
+    <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="6"/>
+    
+    <!-- Baton/Pointer -->
+    <line x1="85" x2="115" y1="15" y2="-15" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Bar Chart -->
+    <rect x="25" y="55" width="10" height="15" fill="white"/>
+    <rect x="40" y="40" width="10" height="30" fill="white"/>
+    <rect x="55" y="25" width="10" height="45" fill="white"/>
+    <rect x="70" y="50" width="10" height="20" fill="white"/>
+  </g>
+  
+  <!-- Company Name -->
+  <text x="130" y="75" font-family="Arial, sans-serif" font-weight="700" font-size="48" fill="white" letter-spacing="-1">orchestrators</text>
+  
+  <!-- Tagline -->
+  <text x="130" y="105" font-family="Arial, sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.7)">We orchestrate your online debut.</text>
+</svg>
